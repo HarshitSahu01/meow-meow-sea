@@ -6,31 +6,57 @@
     <title>All About Cats</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-image: linear-gradient(to right, #f8f8f8, #e6e6e6);
+            color: #444;
             text-align: center;
+            overflow-x: hidden;
         }
         .header {
             background-color: #ffcc00;
-            padding: 20px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1;
         }
         .header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+            animation: textFadeIn 3s forwards;
         }
         .content {
-            padding: 20px;
+            padding: 40px 20px;
+            line-height: 1.6;
+            animation: fadeIn 2s;
         }
         .content img {
             width: 300px;
             height: auto;
             margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+        .content img:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes textFadeIn {
+            from { color: transparent; }
+            to { color: #fff; }
         }
     </style>
     <meta name="deployment-nonce" content="nonce-for-meow">
+    <meta name="deployment-nonce" content="nonce-for-round-2-image-update">
 </head>
 <body>
     <div class="header">
@@ -39,7 +65,9 @@
     <div class="content">
         <p>Cats are small, carnivorous mammals that are often kept as pets. They are known for their independent and playful nature. Cats have been associated with humans for at least 9,500 years and are currently the most popular pet in the world.</p>
         <p>Cats are known for their agile bodies, sharp claws, and quick reflexes. They are expert hunters, capable of catching prey with precision. Cats communicate with a combination of vocalizations and body language.</p>
-        <img src="https://placekitten.com/300/200" alt="Cute Cat">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVEiJtZZPbBtFFMZ/M7ubXdtdb1xSFyeilBapySVU8h8OoFaooFSqiihIVIpQBKci6KEg9Q6H9kovIHoCIVQJJCKE1ENFjnAgcaSGC6rEnxBwA04Tx43t2FnvDAfjkNibxgHxnWb2e/u992bee7tCa00YFsffekFY+nUzFtjW0LrvjRXrCDIAaPLlW0nHL0SsZtVoaF98mLrx3pdhOqLtYPHChahZcYYO7KvPFxvRl5XPp1sN3adWiD1ZAqD6XYK1b/dvE5IWryTt2udLFedwc1+9kLp+vbbpoDh+6TklxBeAi9TL0taeWpdmZzQDry0AcO+jQ12RyohqqoYoo8RDwJrU+qXkjWtfi8Xxt58BdQuwQs9qC/afLwCw8tnQbqYAPsgxE1S6F3EAIXux2oQFKm0ihMsOF71dHYx+f3NND68ghCu1YIoePPQN1pGRABkJ6Bus96CutRZMydTl+TvuiRW1m3n0eDl0vRPcEysqdXn+jsQPsrHMquGeXEaY4Yk4wxWcY5V/9scqOMOVUFthatyTy8QyqwZ+kDURKoMWxNKr2EeqVKcTNOajqKoBgOE28U4tdQl5p5bwCw7BWquaZSzAPlwjlithJtp3pTImSqQRrb2Z8PHGigD4RZuNX6JYj6wj7O4TFLbCO/Mn/m8R+h6rYSUb3ekokRY6f/YukArN979jcW+V/S8g0eT/N3VN3kTqWbQ428m9/8k0P/1aIhF36PccEl6EhOcAUCrXKZXXWS3XKd2vc/TRBG9O5ELC17MmWubD2nKhUKZa26Ba2+D3P+4/MNCFwg59oWVeYhkzgN/JDR8deKBoD7Y+ljEjGZ0sosXVTvbc6RHirr2reNy1OXd6pJsQ+gqjk8VWFYmHrwBzW/n+uMPFiRwHB2I7ih8ciHFxIkd/3Omk5tCDV1t+2nNu5sxxpDFNx+huNhVT3/zMDz8usXC3ddaHBj1GHj/As08fwTS7Kt1HBTmyN29vdwAw+/wbwLVOJ3uAD1wi/dUH7Qei66PfyuRj4Ik9is+hglfbkbfR3cnZm7chlUWLdwmprtCohX4HUtlOcQjLYCu+fzGJH2QRKvP3UNz8bWk1qMxjGTOMThZ3kvgLI5AzFfo379UAAAAASUVORK5CYII=" alt="Cute Cat">
+        <img src="https://placekitten.com/301/200" alt="Cute Cat 2">
+        <img src="https://placekitten.com/302/201" alt="Cute Cat 3">
     </div>
 </body>
 </html>

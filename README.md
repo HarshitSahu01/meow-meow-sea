@@ -1,3 +1,4 @@
 # meow-meow-sea
 
-This project was auto-generated based on the brief: 'I want you to make a simple html css based page which talks about cats and cats only.'
+**Latest Brief (Round 2):**
+Make the page even more professional and stylish like its the best website ever about cats. Use css extensions from cdn if needed but make it look the best and professional. add animations and transitions and scroll effects and more cats
